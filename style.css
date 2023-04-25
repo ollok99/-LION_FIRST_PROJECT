@@ -1,0 +1,90 @@
+@import url("https://fonts.cdnfonts.com/css/commodore-64-pixelized");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* li태그를 쓰면 점 인덱스가 생김 그걸 방지하기 위해 아래와 같이 작성 */
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Commodore 64 Pixelized", sans-serif;
+  background-color: #202028;
+  height: 100%;
+  overflow: hidden; /*넘치는 부분은 스크롤이 생기지 않도록하는 것*/
+}
+
+.game-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+.game-text > button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: salmon;
+  border: none;
+  cursor: pointer;
+}
+
+.score {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+
+/* 실질적으로 테트리스가 들어갈 곳 */
+.playground > ul {
+  border: 7px solid white;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.playground > ul > li {
+  width: 100%;
+  height: 25px;
+}
+
+.playground > ul > li > ul {
+  display: flex;
+}
+
+.playground > ul > li > ul > li {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #ccc;
+}
+
+.tree {
+  background: #67c23a;
+}
+
+.bar {
+  background: salmon;
+}
+.zee {
+  background: #e6a23c;
+}
+.elLeft {
+  background: #8e44ad;
+}
+.elRight {
+  background: #16a085;
+}
+.square {
+  background: #2c82c9;
+}
